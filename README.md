@@ -10,7 +10,7 @@ Todo app is a simple ReactJs App
 ## RUN IT WITH DOCKER.
 ```javascript
   docker pull doblealberto/app-todos:latest
-  docker run --name appTodosNoche -p 3000:80 doblealberto/app-todos:latest
+  docker run --name appTodos -p 3000:80 doblealberto/app-todos:latest
 ```
 
 
