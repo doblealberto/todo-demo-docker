@@ -5,12 +5,12 @@ on:
       - 'main'
     tags:
       - 'v*'
+
 jobs:
-  login-to-dockerhub:
+  docker-build:
     runs-on: ubuntu-latest
+    if: ((startsWith(github.head_ref, 'feature') || startsWith(github.head_ref, 'hotfix') || startsWith(github.head_ref, 'release')) && github.event.pull_request.merged == true)
     steps:
-      - name: Checkout
       - uses: actions/checkout@master
-      
 
 
