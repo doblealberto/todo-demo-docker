@@ -19,10 +19,10 @@ COPY . ./
 RUN npm run build
 
 #Stage 2
-#######################################
+
 #pull the official nginx:1.19.0 base image
 FROM nginx:latest
-#copies React to the container directory
+# Copies React to the container directory
 # Set working directory to nginx resources directory
 WORKDIR /usr/share/nginx/html
 # Remove default nginx static resources
