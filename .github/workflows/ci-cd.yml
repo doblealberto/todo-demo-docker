@@ -9,7 +9,6 @@ on:
 jobs:
   docker-build:
     runs-on: ubuntu-latest
-    if: ((startsWith(github.head_ref, 'feature') || startsWith(github.head_ref, 'hotfix') || startsWith(github.head_ref, 'release')) && github.event.pull_request.merged == true)
     steps:
       - uses: actions/checkout@master
 
