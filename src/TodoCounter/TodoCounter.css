@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+.title{
+    color: #f8e3ca;
+    font-family: 'Merriweather Sans', sans-serif;
+    font: bold;
+    font-size: 12px;
+    text-align: center;
+}

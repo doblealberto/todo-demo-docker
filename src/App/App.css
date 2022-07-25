@@ -1,0 +1,12 @@
+.container{
+  display: flex;
+  align-items: center;
+  padding:15px;
+  flex-direction: column;
+  font-size: 15px;
+  color: rgb(251, 229, 211);
+}
+h1 {
+  margin-bottom: 4px;
+  margin-top: 20px;
+}
