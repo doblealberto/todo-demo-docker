@@ -56,9 +56,9 @@ jobs:
 ```
 We first start by using the `actions/checkout@master` action in order to have acces to our repo code while running the workflow
 
-The next step is to login into dockerhub by using ` docker/login-action@v2`, we will need to configure the secrets for our repo to achieve that you need to go to settings>secrets and add `DOCKER_HUB_USERNAME` and `DOCKER_HUB_ACCESS_TOKEN`
+The next step is to login into dockerhub by using ` docker/login-action@v2`, we will need to configure the secrets for our repo, to achieve that you need to navigate to settings>secrets and add `DOCKER_HUB_USERNAME` and `DOCKER_HUB_ACCESS_TOKEN`
 ![Example Image](https://drive.google.com/uc?id=1PqCaCuUgOQagGlXC9JYZwcrbQwYsz0xo) 
-You must generate an access token in ducker hub. 
+You must also generate an access token in ducker hub. 
 ![Example Image](https://drive.google.com/uc?id=1PpH6_Wn4AAmYP8QyXdQr6W332xwpZ4QX) 
 
 `docker/setup-buildx-action@v1` will setup buildx which is a builder that can be used in the following steps of the workflow
