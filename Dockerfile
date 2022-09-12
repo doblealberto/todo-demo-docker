@@ -6,16 +6,9 @@ FROM node:14 AS builder
 WORKDIR /app
 
 
-# install app dependencies
-#copies package.json and package-lock.json to Docker environment
-COPY package.json ./
-
-# Installs all node packages
-RUN npm install 
-
-
 # Copies everything over to Docker environment
 COPY . ./
+RUN npm install
 RUN npm run build
 
 #Stage 2
